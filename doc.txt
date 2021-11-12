@@ -1,0 +1,95 @@
+clear concept of variable declaration rules and classification ==> Concept clair de règles de déclaration variable et de classification
+
+Règles de déclaration variable: ==> Règles de déclaration variable
+
+1.start with dollar sign($) ==> Commencer avec signe dollar
+2.first letter of variable name comes from a-zA-z_ ==> La première lettre de nom de variable vient de A-ZA-Z_
+3.next letters of variable name comes from a-zA-Z0-9_ ==> Les lettres suivantes de nom de variable proviennent d'A-ZA-Z0-9_
+4.Pas d'espace, pas de syntex ==> Pas d'espace, pas de syntex
+
+classification of variables: ==>Classification des variables:
+
+Variable are mainly Two types ==> La variable est principalement de deux types
+1.Predefined Variable ==> Variable prédéfinie
+2.User Define Variable ==> Utilisateur Définir la variable
+
+Predefined Variable ==> Variable prédéfinie
+There are 12 predefined variables in php 8 ==> Il y a 12 variables prédéfinies dans PHP 8
+1.$GLOBALS => $GLOBALES
+2.$_SERVER => $_SERVEUR
+3.$_REQUEST => $_DEMANDER
+4.$_FILES => $_DES DOSSIERS
+5.$_ENV
+6.$_SESSION
+7.$_COOKIE => $_BISCUIT
+8.$_GET => $_AVOIR
+9.$_POST => $_PUBLIER 
+10.$http_response_header =>$ enTêteDeRéponseHttp
+11.$argc
+12.$argv
+
+User Define Variable => Utilisateur Définir la variable
+User Define variable are 3 types => Les utilisateurs définissent la variable sont de 3 types
+1.variable scope => Portée variable
+2.variable variables
+3.reference variable => variable de référence
+
+Variable Scope => Portée variable
+variable scope are 3 types => La portée variable est de 3 types
+1.local scope ==> Portée locale
+2.global scope ==> portée mondiale
+3.static variable ==> variable statique
+
+
+// Une variable non initialisée et non référencée (pas de contexte d'utilisation); retourne NULL
+var_dump($unset_var);
+
+// L'utilisation d'un booléen; retourne 'false' (Voir l'opérateur ternaire pour comprendre cette syntaxe)
+echo($unset_bool ? "true\n" : "false\n");
+
+// Utilisation d'une chaîne de caractères; retourne 'string(3) "abc"'
+$unset_str .= 'abc';
+var_dump($unset_str);
+
+// Utilisation d'un entier; retourne 'int(25)'
+$unset_int += 25; // 0 + 25 => 25
+var_dump($unset_int);
+
+// Utilisation d'un entier/double; retourne 'float(1.25)'
+$unset_float += 1.25;
+var_dump($unset_float);
+
+// Utilisation d'un tableau : retourne array(1) {  [3]=>  string(3) "def" }
+$unset_arr[3] = "def"; // array() + array(3 => "def") => array(3 => "def")
+var_dump($unset_arr);
+
+// Utilisation d'un objet; crée un nouvel objet stdClass (voir http://www.php.net/manual/fr/reserved.classes.php)
+// Retourne : object(stdClass)#1 (1) {  ["foo"]=>  string(3) "bar" }
+$unset_obj->foo = 'bar';
+var_dump($unset_obj);
+
+
+STRING ==> Chaîne de caractère
+
+
+
+Malgré son âge, PHP est encore une technologie couramment utilisée dans le développement Web.
+
+PHP est conçu pour interagir avec HTML pour générer des sites Web dynamiques.
+
+L'intégration de PHP dans HTML se fait en plaçant du code PHP entre <?phpet ?> tags.
+
+Chaque instruction en PHP doit se terminer par un point-virgule ;.
+
+Les fichiers PHP ont une .php extension et le fichier commence toujours par la balise PHP d'ouverture <?php.
+La balise de fermeture est implicite et omise par convention.
+
+Les espaces blancs sont généralement ignorés lors de l'exécution de code PHP.
+
+Les mots-clés ne sont pas sensibles à la casse en PHP. Par convention, utilisez le boîtier standard.
+
+Séquences d'échappement
+
+Nous utilisons des guillemets pour indiquer le début et la fin d'une chaîne. Les guillemets indiquent à l'ordinateur 
+que nous voulons que tout ce qu'il contient soit traité comme une seule donnée. Mais comment inclure des guillemets 
+dans une chaîne ? 
